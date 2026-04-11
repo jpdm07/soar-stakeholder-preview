@@ -37,7 +37,7 @@ $exists = ($LASTEXITCODE -eq 0)
 
 if (-not $exists) {
   Write-Host "Creating public repo jpdm07/soar-stakeholder-preview ..."
-  & $gh repo create soar-stakeholder-preview --public --description "SOAR stakeholder UX preview (static demo)" --confirm
+  & $gh repo create soar-stakeholder-preview --public --description "SOAR stakeholder UX preview (static demo)"
 }
 
 Write-Host "Pushing main ..."

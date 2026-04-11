@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOAR website revamp — unofficial demo · About</title>
+  <meta name="description" content="Unofficial demo page — not the official Sierra Overlook Animal Rescue website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/soar-prototype.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">SOAR</span>
+        <span class="brand__text">
+          <span class="brand__name">Sierra Overlook</span>
+          <span class="brand__tag">Animal Rescue</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <div class="nav-primary-wrap">
+        <nav aria-label="Primary">
+          <ul class="nav-primary">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-tools">
+        <form class="header-search-form" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
+          <input type="search" name="q" class="header-search" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
+        </form>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/cart-page" target="_blank" rel="noopener noreferrer" aria-label="Shopping cart (opens live checkout)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6zm0 0L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer" aria-label="Open live SOAR site" title="Live site (member tools, if enabled)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <p class="demo-disclaimer" role="note">This page is an <strong>unofficial renovation demo</strong>, not SOAR’s real website. Official site: <a href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">sierraoverlookanimalrescue.org</a></p>
+
+  <main>
+    <div class="wrap page-hero">
+      <h1>About Sierra Overlook Animal Rescue</h1>
+      <p class="lede">Founded in Somerset, California, SOAR is a sanctuary-based rescue for animals who are elderly, medically complex, behaviorally challenging, or otherwise overlooked—paired with humane education for rural communities.</p>
+    </div>
+
+    <section class="section section--surface">
+      <div class="wrap" style="max-width:720px;">
+        <h2 style="font-size:1.75rem;margin-bottom:16px;">Mission &amp; vision</h2>
+        <p style="margin-bottom:24px;">We believe every animal deserves compassion, individualized care, and—when release or adoption is not possible—a dignified forever home on sanctuary grounds.</p>
+        <p style="margin-bottom:24px;">Volunteers power daily operations: feeding, enrichment, facility projects, events, and administrative support. This preview emphasizes the volunteer pathway with a larger, high-contrast button per your Level 3 priority.</p>
+        <a class="btn btn--primary btn--volunteer" href="mailto:info@sierraoverlookanimalrescue.org?subject=Volunteer%20inquiry">Volunteer with SOAR</a>
+        <p style="margin-top:20px;font-size:0.92rem;color:var(--muted);">In production this could deep-link to your volunteer form or a dedicated intake page.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap" style="max-width:720px;">
+        <h2 style="font-size:1.75rem;margin-bottom:16px;">Board &amp; leadership</h2>
+        <p>Executive Director <strong>Kimberly Beckler Nnowalue</strong> leads the organization alongside a growing board committed to governance and strategic growth—details can mirror your published bios.</p>
+        <p style="margin-top:20px;"><a class="btn btn--outline" href="https://www.sierraoverlookanimalrescue.org/about-soar" target="_blank" rel="noopener noreferrer">View live About page</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Sierra Overlook Animal Rescue</p>
+        <p><a href="index.html">Home</a></p>
+      </div>
+      <div>
+        <h3>Mailing</h3>
+        <p>2108 N St #11488<br />Sacramento, CA 95816</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p><a href="tel:+19166337220">(916) 633-7220</a></p>
+        <p><a href="mailto:info@sierraoverlookanimalrescue.org">info@sierraoverlookanimalrescue.org</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+</body>
+</html>

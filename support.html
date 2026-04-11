@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOAR website revamp — unofficial demo · Support</title>
+  <meta name="description" content="Unofficial demo — donate via the official SOAR site (opens in a new tab)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/soar-prototype.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">SOAR</span>
+        <span class="brand__text">
+          <span class="brand__name">Sierra Overlook</span>
+          <span class="brand__tag">Animal Rescue</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <div class="nav-primary-wrap">
+        <nav aria-label="Primary">
+          <ul class="nav-primary">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html" aria-current="page">Support</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-tools">
+        <form class="header-search-form" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
+          <input type="search" name="q" class="header-search" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
+        </form>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/cart-page" target="_blank" rel="noopener noreferrer" aria-label="Shopping cart (opens live checkout)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6zm0 0L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer" aria-label="Open live SOAR site" title="Live site (member tools, if enabled)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <p class="demo-disclaimer" role="note">This page is an <strong>unofficial renovation demo</strong>, not SOAR’s real website. Official site: <a href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">sierraoverlookanimalrescue.org</a></p>
+
+  <main>
+    <div class="wrap page-hero">
+      <h1>Support our cause</h1>
+      <p class="lede">Priority layout from your task list: photography anchors the left column; copy and form actions breathe with extra vertical spacing; no redundant “Home” button in the content area.</p>
+    </div>
+
+    <div class="wrap split-support">
+      <div class="split-support__visual">
+        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=900&q=80" alt="Placeholder — replace with SOAR animal or volunteer image from Dropbox" width="700" height="900" loading="lazy" />
+      </div>
+      <div class="split-support__content">
+        <div class="stack">
+          <div>
+            <h2 style="font-size:1.75rem;margin:0 0 16px;">Your gift makes a lasting difference</h2>
+            <p>Every donation supports rescue, sanctuary care, veterinary treatment, enrichment, and the education programs that help our community understand why this work matters.</p>
+          </div>
+          <div>
+            <h3 style="font-family:var(--font-display);font-size:1.2rem;margin:0 0 12px;">Where your generosity goes</h3>
+            <ul style="margin:0;padding-left:1.2rem;color:var(--muted);line-height:1.8;">
+              <li>Emergency rescue and rehabilitation</li>
+              <li>Life-long sanctuary for special-needs residents</li>
+              <li>School outreach and conservation workshops</li>
+              <li>Medical care and daily enrichment</li>
+            </ul>
+          </div>
+          <div>
+            <p style="font-size:1.05rem;">Together we rescue, heal, and protect—thank you for being part of the SOAR community.</p>
+          </div>
+          <div>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">Complete donation (secure Wix form)</a>
+            <p style="margin-top:16px;font-size:0.9rem;color:var(--muted);">Opens SOAR’s published donation page so you can run a real card transaction during the demo. This preview page keeps the improved layout; the payment step is unchanged from production.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Sierra Overlook Animal Rescue</p>
+        <p>Design preview · <a href="index.html">Back to home</a></p>
+      </div>
+      <div>
+        <h3>Mailing</h3>
+        <p>2108 N St #11488<br />Sacramento, CA 95816</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p><a href="tel:+19166337220">(916) 633-7220</a></p>
+        <p><a href="mailto:info@sierraoverlookanimalrescue.org">info@sierraoverlookanimalrescue.org</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+</body>
+</html>

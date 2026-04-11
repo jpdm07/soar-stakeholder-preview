@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOAR website revamp — unofficial demo · Store</title>
+  <meta name="description" content="Unofficial demo — product links open the official SOAR Wix store checkout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/soar-prototype.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">SOAR</span>
+        <span class="brand__text">
+          <span class="brand__name">Sierra Overlook</span>
+          <span class="brand__tag">Animal Rescue</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <div class="nav-primary-wrap">
+        <nav aria-label="Primary">
+          <ul class="nav-primary">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="store.html" aria-current="page">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-tools">
+        <form class="header-search-form" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
+          <input type="search" name="q" class="header-search" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
+        </form>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/cart-page" target="_blank" rel="noopener noreferrer" aria-label="Shopping cart (opens live checkout)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6zm0 0L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer" aria-label="Open live SOAR site" title="Live site (member tools, if enabled)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <p class="demo-disclaimer" role="note">This page is an <strong>unofficial renovation demo</strong>, not SOAR’s real website. Official site: <a href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">sierraoverlookanimalrescue.org</a></p>
+
+  <main>
+    <div class="wrap page-hero">
+      <h1>Shop with purpose</h1>
+      <p class="lede">Store priority items: description text is fully visible (no “Read more” truncation), sort controls sit on the left, and hero products include lifestyle shots once volunteer shirt photography from Dropbox is dropped in.</p>
+    </div>
+
+    <div class="wrap section--tight" style="padding-top:0;">
+      <div class="store-intro">
+        <p>Every purchase from the SOAR store directly supports our mission to rescue, rehabilitate, and provide sanctuary for animals in need. From feeding and medical care to education and conservation programs, proceeds fund life-saving work. When you shop with us, you are giving hope and making a tangible difference for animals on sanctuary grounds and in foster care.</p>
+      </div>
+
+      <div class="store-toolbar">
+        <div class="store-sort">
+          <label for="sort">Sort by</label>
+          <select id="sort" name="sort" aria-label="Sort products">
+            <option>Featured</option>
+            <option>Price: low to high</option>
+            <option>Price: high to low</option>
+            <option>Newest</option>
+          </select>
+        </div>
+        <p style="margin:0;font-size:0.9rem;color:var(--muted);">Sort &amp; checkout run on the live Wix store. <a href="https://www.sierraoverlookanimalrescue.org/category/all-products" target="_blank" rel="noopener noreferrer">Open full store</a></p>
+      </div>
+
+      <div class="product-grid">
+        <a class="product-card" href="https://www.sierraoverlookanimalrescue.org/product-page/men-s-soar-logo-t-shirt" target="_blank" rel="noopener noreferrer">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" alt="Placeholder — SOAR shirt on volunteer (replace with Dropbox lifestyle shot)" width="400" height="400" loading="lazy" />
+          </div>
+          <div class="product-card__body">
+            <h3>Men’s SOAR logo tee</h3>
+            <p class="product-card__price">From $30.00 · Buy on live store</p>
+            <span class="product-card__badge">Opens Wix checkout</span>
+          </div>
+        </a>
+        <a class="product-card" href="https://www.sierraoverlookanimalrescue.org/product-page/soar-zip-up-sweatshirt-charcoal-grey" target="_blank" rel="noopener noreferrer">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1618354691373-d851c43c2022?w=600&q=80" alt="Placeholder apparel flat lay" width="400" height="400" loading="lazy" />
+          </div>
+          <div class="product-card__body">
+            <h3>SOAR zip-up sweatshirt</h3>
+            <p class="product-card__price">$45.00 · Buy on live store</p>
+          </div>
+        </a>
+        <a class="product-card" href="https://www.sierraoverlookanimalrescue.org/product-page/soar-sticker-classic" target="_blank" rel="noopener noreferrer">
+          <div class="product-card__img">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="Placeholder sticker pack" width="400" height="400" loading="lazy" />
+          </div>
+          <div class="product-card__body">
+            <h3>Classic SOAR sticker</h3>
+            <p class="product-card__price">$5.00 · Buy on live store</p>
+          </div>
+        </a>
+      </div>
+      <p style="margin-top:28px;text-align:center;"><a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/category/all-products" target="_blank" rel="noopener noreferrer">Browse all products &amp; cart</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Sierra Overlook Animal Rescue</p>
+        <p><a href="index.html">Home</a></p>
+      </div>
+      <div>
+        <h3>Mailing</h3>
+        <p>2108 N St #11488<br />Sacramento, CA 95816</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p><a href="tel:+19166337220">(916) 633-7220</a></p>
+        <p><a href="mailto:info@sierraoverlookanimalrescue.org">info@sierraoverlookanimalrescue.org</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+</body>
+</html>

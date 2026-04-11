@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOAR website revamp — unofficial demo · Events</title>
+  <meta name="description" content="Unofficial demo — event registration links go to the official SOAR site where applicable." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/soar-prototype.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">SOAR</span>
+        <span class="brand__text">
+          <span class="brand__name">Sierra Overlook</span>
+          <span class="brand__tag">Animal Rescue</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <div class="nav-primary-wrap">
+        <nav aria-label="Primary">
+          <ul class="nav-primary">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html" aria-current="page">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-tools">
+        <form class="header-search-form" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
+          <input type="search" name="q" class="header-search" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
+        </form>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/cart-page" target="_blank" rel="noopener noreferrer" aria-label="Shopping cart (opens live checkout)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6zm0 0L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer" aria-label="Open live SOAR site" title="Live site (member tools, if enabled)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <p class="demo-disclaimer" role="note">This page is an <strong>unofficial renovation demo</strong>, not SOAR’s real website. Official site: <a href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">sierraoverlookanimalrescue.org</a></p>
+
+  <main>
+    <div class="wrap page-hero">
+      <h1>Community events</h1>
+      <p class="lede">Homepage intentionally omits this feed (per Priority 1). Here, upcoming items are separated from past programming. Event art uses <code style="font-size:0.9em;">object-fit: contain</code> so dessert flyers are not cropped at the top. “Learn more” uses the same loud button treatment as the hero.</p>
+    </div>
+
+    <div class="wrap section--tight" style="padding-top:0;">
+      <div class="events-filter" aria-label="Jump to section">
+        <a class="filter-pill filter-pill--on" href="#upcoming-events">Upcoming</a>
+        <a class="filter-pill" href="#past-events">Past events</a>
+        <a class="filter-pill" href="https://www.sierraoverlookanimalrescue.org/about-3" target="_blank" rel="noopener noreferrer">Live events page</a>
+      </div>
+
+      <div class="event-list" id="upcoming-events">
+        <article class="event-card">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Placeholder — wine country event photo; replace with official Passport Weekend art" width="640" height="480" loading="lazy" />
+          </div>
+          <div>
+            <h2>SOAR at Mellowood Vineyard · Passport Weekend</h2>
+            <p style="color:var(--muted);margin-bottom:12px;">Informational table with merchandise during the El Dorado Winery Association Passport Weekend. Meet the team, learn about sanctuary life, and take home gear that funds the mission.</p>
+            <p style="font-weight:600;color:var(--forest-deep);">Partner venue: Mellowood Vineyard, Fair Play, CA</p>
+            <div class="btn-row" style="margin-top:8px;">
+              <a class="btn btn--forest btn--loud" href="https://www.sierraoverlookanimalrescue.org/event-details-registration/sip-support-soar-at-mellowood-vineyard-1" target="_blank" rel="noopener noreferrer">Register on SOAR’s site</a>
+              <a class="btn btn--outline btn--loud" href="https://www.mellowoodvineyard.com/events" target="_blank" rel="noopener noreferrer">Mellowood venue</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" id="past-events">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&q=80" alt="Placeholder dessert fundraiser graphic — full image visible inside frame" width="640" height="480" loading="lazy" />
+          </div>
+          <div>
+            <span class="event-card__past">Past event</span>
+            <h2>Eat ice cream · Save animals</h2>
+            <p style="color:var(--muted);">Leatherby’s Folsom · 20% benefit night. Past events stay visible but clearly labeled so visitors are not confused—mirrors the automation discussion in your Wix task list.</p>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/about-3" target="_blank" rel="noopener noreferrer">View on live events page</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Sierra Overlook Animal Rescue</p>
+        <p><a href="index.html">Home</a></p>
+      </div>
+      <div>
+        <h3>Mailing</h3>
+        <p>2108 N St #11488<br />Sacramento, CA 95816</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p><a href="tel:+19166337220">(916) 633-7220</a></p>
+        <p><a href="mailto:info@sierraoverlookanimalrescue.org">info@sierraoverlookanimalrescue.org</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/nav.js"></script>
+</body>
+</html>

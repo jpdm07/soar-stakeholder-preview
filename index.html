@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOAR website revamp — unofficial demo · Home</title>
+  <meta name="description" content="Unofficial stakeholder demo only — not the real Sierra Overlook Animal Rescue site. Proposed layout and UX; donations and store link out to the official Wix site." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/soar-prototype.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">SOAR</span>
+        <span class="brand__text">
+          <span class="brand__name">Sierra Overlook</span>
+          <span class="brand__tag">Animal Rescue</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <div class="nav-primary-wrap">
+        <nav aria-label="Primary">
+          <ul class="nav-primary">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-tools">
+        <form class="header-search-form" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
+          <input type="search" name="q" class="header-search" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
+        </form>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/cart-page" target="_blank" rel="noopener noreferrer" aria-label="Shopping cart (opens live checkout)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6zm0 0L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer" aria-label="Open live SOAR site" title="Live site (member tools, if enabled)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <p class="demo-disclaimer" role="note">This page is an <strong>unofficial renovation demo</strong>, not SOAR’s real website. Official site: <a href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">sierraoverlookanimalrescue.org</a></p>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="hero__eyebrow">Nonprofit sanctuary · Sierra foothills</p>
+          <h1>Sierra Overlook Animal Rescue</h1>
+          <p class="hero__lead">A sanctuary for animals who need lifelong care, rehabilitation, and compassion—supported by people who believe every life matters.</p>
+          <div class="btn-row">
+            <a class="btn btn--forest btn--loud" href="about.html">Learn more</a>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/category/all-products" target="_blank" rel="noopener noreferrer">Shop with purpose</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero__visual">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=80" alt="Placeholder: dogs outdoors — replace with SOAR photography from shared Dropbox" width="800" height="600" loading="eager" />
+          </div>
+          <div class="donate-card" style="margin-top:20px;">
+            <h2>Be their hero</h2>
+            <p class="donate-card__sub">Your gift funds rescue, veterinary care, sanctuary, and education in the Sierra foothills.</p>
+            <div class="donate-card__fields">
+              <div>
+                <label>Frequency</label>
+                <div class="chip-row" role="group" aria-label="Donation frequency (opens live donation form)">
+                  <a class="chip chip--active" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">One time</a>
+                  <a class="chip" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">Monthly</a>
+                  <a class="chip" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">Yearly</a>
+                </div>
+              </div>
+              <div>
+                <label>Amount</label>
+                <div class="chip-row" role="group" aria-label="Suggested amounts (choose on live form)">
+                  <a class="chip chip--active" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">$25</a>
+                  <a class="chip" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">$50</a>
+                  <a class="chip" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">$100</a>
+                  <a class="chip" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">Other</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer" style="width:100%;">Donate on secure form</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface section--tight">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Our mission</h2>
+          <p>SOAR provides a safe, loving sanctuary for animals who have been abused, abandoned, or can no longer survive in the wild—paired with education and advocacy that deepens the bond between people, animals, and the land we share.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Shop with purpose</h2>
+          <p>Every purchase supports feeding, medical care, education, and conservation programs. 100% of store proceeds advance the mission.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/category/all-products" target="_blank" rel="noopener noreferrer">Shop the SOAR store</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Nonprofit initiatives</h2>
+          <p>Three pillars of work—each with a clear call-to-action so supporters know how to engage.</p>
+        </div>
+        <div class="init-grid">
+          <article class="init-card">
+            <h3>Animal rescue</h3>
+            <p>Emergency response, medical treatment, and individualized rehabilitation for animals in crisis.</p>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">Support rescue</a>
+          </article>
+          <article class="init-card">
+            <h3>Life-long sanctuary</h3>
+            <p>A peaceful haven for animals who cannot be released or rehomed—with daily care and enrichment.</p>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/support-our-cause" target="_blank" rel="noopener noreferrer">Support sanctuary</a>
+          </article>
+          <article class="init-card">
+            <h3>Education &amp; outreach</h3>
+            <p>Schools, workshops, and on-site experiences that build empathy and responsible stewardship.</p>
+            <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/blog" target="_blank" rel="noopener noreferrer">Animal stories</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Foster-to-adopt animals</h2>
+          <p>Trial placements with full SOAR support—equal card heights keep both profiles visually balanced on the page.</p>
+        </div>
+        <div class="foster-grid">
+          <article class="foster-card">
+            <div class="foster-card__media">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80" alt="Placeholder portrait for Lani — replace with approved SOAR photo" width="600" height="375" loading="lazy" />
+            </div>
+            <div class="foster-card__body">
+              <p class="foster-card__meta">Malinois &amp; Husky mix · DOB April 2024</p>
+              <h3>Lani</h3>
+              <p class="foster-card__story">Playful, loyal, and full of love once she knows you. Best with an experienced, active owner; needs to be the only pet. Long walks, structure, and consistency help her shine.</p>
+              <a class="btn btn--forest" href="mailto:info@sierraoverlookanimalrescue.org?subject=Foster%20inquiry%20%E2%80%94%20Lani">Contact us</a>
+            </div>
+          </article>
+          <article class="foster-card">
+            <div class="foster-card__media">
+              <img src="https://images.unsplash.com/photo-1574158622682-e40e69881026?w=900&q=80" alt="Placeholder portrait for Bagheera — replace with approved SOAR photo" width="600" height="375" loading="lazy" />
+            </div>
+            <div class="foster-card__body">
+              <p class="foster-card__meta">Russian Blue · DOB mid May 2025</p>
+              <h3>Bagheera</h3>
+              <p class="foster-card__story">Paraplegic kitten with a huge spirit—plays and explores on her own terms. Ideal for a calm home with someone home most of the day; gentle or no other pets.</p>
+              <a class="btn btn--forest" href="mailto:info@sierraoverlookanimalrescue.org?subject=Foster%20inquiry%20%E2%80%94%20Bagheera">Contact us</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface">
+      <div class="wrap">
+        <div class="section__head" style="text-align:center;max-width:520px;margin-inline:auto;margin-bottom:32px;">
+          <h2>Services · Coming 2026</h2>
+          <p>Narrow pricing cards replace long horizontal rows so guests scan amounts without “drawing lines” across the screen.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Conservation workshop</h3>
+            <p class="service-card__price">$30</p>
+            <p class="service-card__note">Hands-on learning</p>
+            <a class="btn btn--outline" href="https://www.sierraoverlookanimalrescue.org/service-page/conservation-workshop" target="_blank" rel="noopener noreferrer">View course</a>
+          </article>
+          <article class="service-card">
+            <h3>School outreach</h3>
+            <p class="service-card__price">$250</p>
+            <p class="service-card__note">Programs for classrooms</p>
+            <a class="btn btn--outline" href="https://www.sierraoverlookanimalrescue.org/service-page/school-outreach" target="_blank" rel="noopener noreferrer">View course</a>
+          </article>
+          <article class="service-card">
+            <h3>Sanctuary tour</h3>
+            <p class="service-card__price">$50</p>
+            <p class="service-card__note">On-site visit</p>
+            <a class="btn btn--outline" href="https://www.sierraoverlookanimalrescue.org/service-page/sanctuary-tour" target="_blank" rel="noopener noreferrer">Book now</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-bleed" aria-labelledby="exp-title">
+      <div class="experience-bleed__bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1600&q=80" alt="" width="1600" height="900" loading="lazy" />
+      </div>
+      <div class="experience-bleed__inner">
+        <h2 id="exp-title">Experience SOAR</h2>
+        <p>Plan a visit, join a tour, or bring your classroom—this band is intentionally full-width so the story feels immersive, similar to how flagship nonprofit sites stage their hero programs.</p>
+        <div class="btn-row" style="justify-content:center;">
+          <a class="btn btn--primary btn--loud" href="https://www.sierraoverlookanimalrescue.org/book-online" target="_blank" rel="noopener noreferrer">Book programs &amp; tours</a>
+          <a class="btn btn--ghost-light btn--loud" href="events.html">Community events</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners-strip">
+      <div class="wrap">
+        <h2>Community partners</h2>
+        <p>Grateful recognition for local businesses that host events, donate supplies, and champion the mission—designed to invite others to partner with SOAR.</p>
+        <div class="partner-logos">
+          <a class="partner-logo" href="https://www.thedinnerstation.com/" target="_blank" rel="noopener noreferrer">
+            <div class="partner-logo__img-wrap">
+              <img src="images/partners/dinner-station.png" alt="The Dinner Station" width="220" height="80" loading="lazy" decoding="async" />
+            </div>
+            <span>Somerset, CA · Visit site</span>
+          </a>
+          <a class="partner-logo" href="https://www.mellowoodvineyard.com/" target="_blank" rel="noopener noreferrer">
+            <div class="partner-logo__img-wrap">
+              <img src="images/partners/mellowood-vineyard.jpg" alt="Mellowood Vineyard" width="220" height="80" loading="lazy" decoding="async" />
+            </div>
+            <span>Fair Play, CA · Visit site</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Sierra Overlook Animal Rescue</p>
+        <p>501(c)(3) nonprofit sanctuary in the Sierra foothills. Transparency, compassion, and community partnership guide everything we publish online.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/soar_sanctuary/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/SierraOverlookAnimalRescue/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.tiktok.com/@soar_sanctuary" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+        <p style="margin-top:16px;font-size:0.85rem;opacity:0.8;">Social links match the live Wix footer. Donations and checkout open SOAR’s current secure Wix flows in a new tab.</p>
+      </div>
+      <div>
+        <h3>Mailing</h3>
+        <p>2108 N St #11488<br />Sacramento, CA 95816</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p><a href="tel:+19166337220">(916) 633-7220</a></p>
+        <p><a href="mailto:info@sierraoverlookanimalrescue.org">info@sierraoverlookanimalrescue.org</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-note">
+      <p>UX preview by Jane Chavez · Donations &amp; store use the live <a href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">sierraoverlookanimalrescue.org</a> checkout · Partner logos from the published site assets · Hero/foster photos: Unsplash placeholders until Dropbox shots are swapped in.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

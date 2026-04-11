@@ -1,24 +1,24 @@
-# SOAR website — executive UX preview
+# SOAR website — stakeholder UX preview
 
 **Unofficial demo** for stakeholder review — not [sierraoverlookanimalrescue.org](https://www.sierraoverlookanimalrescue.org/).  
-Static HTML/CSS; **donations, store, cart, and programs** open the **live Wix site** in a new tab so the executive director can see real checkout flows.
+Static HTML/CSS; **donations, store, cart, and programs** open the **live Wix site** in a new tab so stakeholders can see real checkout flows.
 
 ## Published site (GitHub Pages)
 
 After you enable Pages (steps below), the public URL is:
 
-**https://jpdm07.github.io/soar-executive-preview/**
+**https://jpdm07.github.io/soar-stakeholder-preview/**
 
-(If you used a different repository name, replace `soar-executive-preview` in that path.)
+(If you used a different repository name, replace `soar-stakeholder-preview` in that path.)
 
 ## One-time setup
 
-1. Create an **empty** repository on GitHub named **`soar-executive-preview`** (no README) under `jpdm07`, **or** run the push below and create the repo when GitHub prompts.
+1. Create an **empty** repository on GitHub named **`soar-stakeholder-preview`** (no README) under `jpdm07`, **or** run the push below and create the repo when GitHub prompts.
 
 2. From this folder:
 
    ```bash
-   git remote add origin https://github.com/jpdm07/soar-executive-preview.git
+   git remote add origin https://github.com/jpdm07/soar-stakeholder-preview.git
    git push -u origin main
    ```
 
@@ -26,7 +26,7 @@ After you enable Pages (steps below), the public URL is:
 
 4. Wait ~1–2 minutes, then open the Pages URL above.
 
-## What to tell the ED
+## What to tell stakeholders
 
 - Tab titles and the top banner state this is a **renovation demo**, not the real org site.
 - Partner logos and store product shots come from the **live** Wix media where noted.

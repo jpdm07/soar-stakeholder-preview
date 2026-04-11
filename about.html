@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="images/brand/soar-logo.png" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOAR website revamp — unofficial demo · About</title>
   <meta name="description" content="Unofficial demo page — not the official Sierra Overlook Animal Rescue website." />
@@ -14,11 +15,7 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">
-        <span class="brand__mark" aria-hidden="true">SOAR</span>
-        <span class="brand__text">
-          <span class="brand__name">Sierra Overlook</span>
-          <span class="brand__tag">Animal Rescue</span>
-        </span>
+        <img class="brand__logo" src="images/brand/soar-logo.png" alt="Sierra Overlook Animal Rescue" width="260" height="86" decoding="async" />
       </a>
       <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
       <div class="nav-primary-wrap">
@@ -64,6 +61,31 @@
       </div>
     </section>
 
+    <section class="section section-about-gallery" aria-labelledby="about-gallery-title">
+      <div class="wrap">
+        <h2 id="about-gallery-title" class="about-gallery__title">Sanctuary moments</h2>
+        <p class="about-gallery__intro">A little warmth between the spreadsheets—friendly faces who remind us why this work matters. These are heartfelt stock photos until SOAR drops real sanctuary shots into Dropbox.</p>
+        <div class="about-gallery">
+          <figure class="about-gallery__cell about-gallery__cell--hero">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Three dogs running together on a path" width="900" height="700" loading="lazy" decoding="async" />
+            <figcaption class="about-gallery__caption">Joy in motion</figcaption>
+          </figure>
+          <figure class="about-gallery__cell">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Golden puppy in the grass looking up with soft eyes" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-gallery__cell">
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Orange tabby cat resting peacefully" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-gallery__cell">
+            <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Dog and cat cuddling as unlikely friends" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-gallery__cell">
+            <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Person gently holding a small dog in caring hands" width="600" height="450" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="wrap" style="max-width:720px;">
         <h2 style="font-size:1.75rem;margin-bottom:16px;">Board &amp; leadership</h2>
@@ -76,7 +98,9 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <p class="footer-brand">Sierra Overlook Animal Rescue</p>
+        <div class="footer-brand-block">
+          <img class="footer-brand__logo" src="images/brand/soar-logo.png" alt="Sierra Overlook Animal Rescue" width="200" height="66" loading="lazy" decoding="async" />
+        </div>
         <p><a href="index.html">Home</a></p>
       </div>
       <div>

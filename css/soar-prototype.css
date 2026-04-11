@@ -1,4 +1,4 @@
-/* SOAR executive preview — modern minimal nonprofit prototype
+/* SOAR stakeholder preview — modern minimal nonprofit prototype
    Replace Unsplash placeholders with Dropbox / brand photography before launch. */
 
 :root {
@@ -136,6 +136,16 @@ p:last-child {
   text-decoration: none;
   color: inherit;
   flex-shrink: 0;
+}
+
+/* Official SOAR wordmark from published Wix assets (vendored under images/brand). */
+.brand__logo {
+  height: clamp(44px, 5.5vw, 56px);
+  width: auto;
+  max-width: min(280px, 58vw);
+  object-fit: contain;
+  object-position: left center;
+  display: block;
 }
 
 .brand__mark {
@@ -965,6 +975,25 @@ a.chip--active:hover {
   font-weight: 700;
 }
 
+.footer-brand-block {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer-brand__logo {
+  height: 48px;
+  width: auto;
+  max-width: min(220px, 70vw);
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+}
+
 .footer-brand {
   font-family: var(--font-display);
   font-size: 1.35rem;
@@ -1030,10 +1059,132 @@ a.chip--active:hover {
   top: calc(var(--header-h) + 24px);
 }
 
+.split-support__visual--warm {
+  position: relative;
+  padding: 8px;
+  background: linear-gradient(
+    145deg,
+    rgba(184, 92, 56, 0.18) 0%,
+    rgba(90, 125, 108, 0.2) 45%,
+    rgba(247, 246, 243, 0.95) 100%
+  );
+  box-shadow:
+    0 24px 60px rgba(44, 74, 62, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.split-support__visual--warm::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: calc(var(--radius-lg) - 6px);
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(44, 74, 62, 0.08) inset;
+}
+
+.split-support__visual--warm img {
+  border-radius: calc(var(--radius-lg) - 8px);
+  position: relative;
+  z-index: 1;
+}
+
 .split-support__visual img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* About — sanctuary photo mosaic */
+.section-about-gallery {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-warm) 55%, var(--bg) 100%);
+}
+
+.about-gallery__title {
+  text-align: center;
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+  margin: 0 0 12px;
+}
+
+.about-gallery__intro {
+  text-align: center;
+  max-width: 52ch;
+  margin: 0 auto 40px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px;
+  gap: 16px;
+}
+
+.about-gallery__cell {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.about-gallery__cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.about-gallery__cell:hover img {
+  transform: scale(1.04);
+}
+
+.about-gallery__cell--hero {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.about-gallery__caption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(30, 52, 44, 0.72);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .about-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 180px;
+  }
+
+  .about-gallery__cell--hero {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .about-gallery__cell--hero {
+    min-height: 220px;
+  }
 }
 
 .split-support__content .stack > * + * {
@@ -1048,6 +1199,10 @@ a.chip--active:hover {
   .split-support__visual {
     position: static;
     max-height: 280px;
+  }
+
+  .split-support__visual--warm {
+    padding: 6px;
   }
 
   .split-support__visual img {

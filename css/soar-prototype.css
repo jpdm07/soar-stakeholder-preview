@@ -136,13 +136,15 @@ p:last-child {
   text-decoration: none;
   color: inherit;
   flex-shrink: 0;
+  overflow: visible;
 }
 
-/* Official SOAR wordmark from published Wix assets (vendored under images/brand). */
+/* Official SOAR wordmark — modest height + enough width so the round mark isn’t clipped. */
 .brand__logo {
-  height: clamp(44px, 5.5vw, 56px);
+  height: 36px;
   width: auto;
-  max-width: min(280px, 58vw);
+  max-height: 38px;
+  max-width: min(220px, 52vw);
   object-fit: contain;
   object-position: left center;
   display: block;
@@ -943,6 +945,8 @@ a.chip--active:hover {
 
 /* Footer */
 .site-footer {
+  position: relative;
+  z-index: 2;
   background: var(--forest-deep);
   color: #c5d4cc;
   padding: 56px 0 40px;
@@ -978,19 +982,22 @@ a.chip--active:hover {
 .footer-brand-block {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
-  padding: 10px 14px;
+  padding: 12px 18px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.14);
+  overflow: visible;
 }
 
 .footer-brand__logo {
-  height: 48px;
+  height: 32px;
   width: auto;
-  max-width: min(220px, 70vw);
+  max-height: 34px;
+  max-width: min(200px, 75vw);
   object-fit: contain;
-  object-position: left center;
+  object-position: center center;
   display: block;
 }
 
@@ -1048,20 +1055,25 @@ a.chip--active:hover {
   grid-template-columns: 1fr 1fr;
   gap: clamp(28px, 5vw, 56px);
   align-items: start;
-  padding-bottom: 80px;
+  padding-bottom: clamp(72px, 12vw, 128px);
 }
 
+/* Static layout (no sticky) so the photo can’t ride over the footer while scrolling. */
 .split-support__visual {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
-  position: sticky;
-  top: calc(var(--header-h) + 24px);
+  position: relative;
+  align-self: start;
+  width: 100%;
+  max-width: 520px;
+  justify-self: center;
 }
 
 .split-support__visual--warm {
   position: relative;
-  padding: 8px;
+  padding: 10px;
+  box-sizing: border-box;
   background: linear-gradient(
     145deg,
     rgba(184, 92, 56, 0.18) 0%,
@@ -1076,16 +1088,23 @@ a.chip--active:hover {
 .split-support__visual--warm::after {
   content: "";
   position: absolute;
-  inset: 14px;
-  border-radius: calc(var(--radius-lg) - 6px);
+  inset: 16px;
+  border-radius: calc(var(--radius-lg) - 4px);
   pointer-events: none;
   box-shadow: 0 0 0 1px rgba(44, 74, 62, 0.08) inset;
 }
 
 .split-support__visual--warm img {
-  border-radius: calc(var(--radius-lg) - 8px);
+  border-radius: calc(var(--radius-lg) - 10px);
   position: relative;
   z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: min(68vh, 560px);
+  height: auto;
+  object-fit: cover;
+  object-position: center 22%;
 }
 
 .split-support__visual img {
@@ -1197,16 +1216,26 @@ a.chip--active:hover {
   }
 
   .split-support__visual {
-    position: static;
-    max-height: 280px;
+    max-width: min(100%, 440px);
+    margin-inline: auto;
   }
 
   .split-support__visual--warm {
-    padding: 6px;
+    padding: 8px;
+  }
+
+  .split-support__visual--warm::after {
+    inset: 12px;
+  }
+
+  .split-support__visual--warm img {
+    max-height: min(52vh, 420px);
+    aspect-ratio: 3 / 4;
+    object-position: center 20%;
   }
 
   .split-support__visual img {
-    height: 100%;
+    max-height: min(52vh, 420px);
     object-fit: cover;
   }
 }
@@ -1261,6 +1290,34 @@ a.chip--active:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 28px;
+}
+
+/* Store: three equal columns on wide viewports so the CTA can sit under the middle product. */
+@media (min-width: 880px) {
+  .store-product-catalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CTA row uses the same column tracks + gap as the product grid above. */
+.store-cta-align {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 880px) {
+  .store-cta-align {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .store-cta-align__inner {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .product-card {

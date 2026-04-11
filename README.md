@@ -1,26 +1,33 @@
 # SOAR website — executive UX preview
 
-Static HTML/CSS preview for **Sierra Overlook Animal Rescue**. Donations, store checkout, cart, programs, and several CTAs open the **live** [sierraoverlookanimalrescue.org](https://www.sierraoverlookanimalrescue.org/) Wix flows in a new tab so demos can use real payments.
+**Unofficial demo** for stakeholder review — not [sierraoverlookanimalrescue.org](https://www.sierraoverlookanimalrescue.org/).  
+Static HTML/CSS; **donations, store, cart, and programs** open the **live Wix site** in a new tab so the executive director can see real checkout flows.
 
-## GitHub Pages
+## Published site (GitHub Pages)
 
-1. Create a new repository (for example `soar-executive-redesign`) on GitHub and push this folder:
+After you enable Pages (steps below), the public URL is:
+
+**https://jpdm07.github.io/soar-executive-preview/**
+
+(If you used a different repository name, replace `soar-executive-preview` in that path.)
+
+## One-time setup
+
+1. Create an **empty** repository on GitHub named **`soar-executive-preview`** (no README) under `jpdm07`, **or** run the push below and create the repo when GitHub prompts.
+
+2. From this folder:
 
    ```bash
-   cd soar-executive-redesign
-   git init
-   git add .
-   git commit -m "SOAR executive preview with live checkout links"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/soar-executive-redesign.git
+   git remote add origin https://github.com/jpdm07/soar-executive-preview.git
    git push -u origin main
    ```
 
-2. In the repo on GitHub: **Settings → Pages → Build and deployment → Source**: **Deploy from a branch**, branch **main**, folder **/ (root)**.
+3. On GitHub: **Settings → Pages → Build and deployment → Source** → **Deploy from a branch** → Branch **`main`**, folder **`/` (root)**.
 
-3. After the first deploy, the site will be at `https://YOUR_USERNAME.github.io/soar-executive-redesign/` (exact URL is shown on the Pages settings screen).
+4. Wait ~1–2 minutes, then open the Pages URL above.
 
-## Assets
+## What to tell the ED
 
-- Partner logos are in `images/partners/` (exported from the published Wix media URLs).
-- Replace Unsplash hero/foster images with Dropbox photography when ready.
+- Tab titles and the top banner state this is a **renovation demo**, not the real org site.
+- Partner logos and store product shots come from the **live** Wix media where noted.
+- Hero/foster photos are **stock placeholders** until Dropbox assets are swapped in.

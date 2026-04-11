@@ -3,3 +3,5 @@ Thumbs.db
 _tmp*.txt
 _full-home.html
 _events-page.html
+_fetch_products.py
+_get_fit_urls.py

@@ -1,0 +1,14 @@
+---
+description: Professional Git commits for this repository
+alwaysApply: true
+---
+
+When committing in this project, use **Conventional Commits**:
+
+- **Subject:** `type(scope): imperative description` (about 50–72 characters).
+- **Types:** `feat`, `fix`, `style`, `refactor`, `docs`, `chore`, `perf`, `ci`.
+- **Body (optional):** blank line after subject, then what changed and why (wrap near 72 columns).
+
+Examples: `fix(brand): prevent logo clipping in sticky header`, `feat(store): center CTA under middle product`.
+
+See `.gitmessage` in the repo root. Prefer `git commit` without `-m` once to use the configured template, or pass the same shape via multiple `-m` flags.

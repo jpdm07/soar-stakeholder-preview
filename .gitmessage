@@ -1,0 +1,10 @@
+
+# Conventional commits — type(scope): imperative subject (≤72 characters)
+# Types: feat | fix | docs | style | refactor | chore | perf | ci
+#
+# Examples:
+#   fix(brand): show full SOAR lockup in header and footer
+#   feat(store): align CTA with center product column
+#
+# After the subject: blank line, then body (what/why, wrap ~72 cols).
+# Lines starting with # are removed from the final message.

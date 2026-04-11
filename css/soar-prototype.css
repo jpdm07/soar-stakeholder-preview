@@ -116,6 +116,7 @@ p:last-child {
   background: rgba(247, 246, 243, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
+  overflow: visible;
 }
 
 .site-header__inner {
@@ -127,6 +128,7 @@ p:last-child {
   width: min(100% - 40px, calc(var(--max) + 80px));
   margin-inline: auto;
   padding-block: 10px;
+  overflow: visible;
 }
 
 .brand {
@@ -135,19 +137,21 @@ p:last-child {
   gap: 12px;
   text-decoration: none;
   color: inherit;
-  flex-shrink: 0;
+  flex: 0 0 auto;
   overflow: visible;
+  padding: 2px 4px 2px 0;
+  box-sizing: content-box;
 }
 
-/* Official SOAR wordmark — modest height + enough width so the round mark isn’t clipped. */
+/* Full SOAR lockup: wide enough for circular emblem + wordmark (object-fit: contain, never crop). */
 .brand__logo {
-  height: 36px;
+  display: block;
   width: auto;
-  max-height: 38px;
-  max-width: min(220px, 52vw);
+  height: 40px;
+  max-height: 44px;
+  max-width: min(360px, 78vw);
   object-fit: contain;
   object-position: left center;
-  display: block;
 }
 
 .brand__mark {
@@ -984,21 +988,21 @@ a.chip--active:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  padding: 12px 18px;
+  padding: 14px 22px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   overflow: visible;
 }
 
 .footer-brand__logo {
-  height: 32px;
+  display: block;
   width: auto;
-  max-height: 34px;
-  max-width: min(200px, 75vw);
+  height: 40px;
+  max-height: 48px;
+  max-width: min(340px, 90vw);
   object-fit: contain;
   object-position: center center;
-  display: block;
 }
 
 .footer-brand {

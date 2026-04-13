@@ -489,17 +489,18 @@ p:last-child {
   margin-bottom: 14px;
 }
 
-/* Official wordmark from the live site (vendored PNG) — homepage only, sized for stakeholder review. */
+/* Official wordmark from the live site — full lockup (round mark + type) scales by width only; no height cap that squishes or clips. */
 .hero__owner-logo {
   margin: 0 0 22px;
-  max-width: min(320px, 90vw);
+  max-width: min(480px, 94vw);
+  overflow: visible;
 }
 
 .hero__owner-logo img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-height: clamp(72px, 14vw, 100px);
   object-fit: contain;
   object-position: left center;
 }

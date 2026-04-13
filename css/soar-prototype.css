@@ -302,8 +302,24 @@ p:last-child {
 }
 
 @media (max-width: 1020px) {
+  /* With the slide-out nav hidden, flex only sees brand + toggle + tools; avoid space-between
+     leaving the hamburger visually centered — pin brand left and cluster tools + menu on the right. */
+  .site-header__inner {
+    justify-content: flex-start;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+
+  .header-tools {
+    gap: 8px;
+    order: 1;
+  }
+
   .nav-toggle {
     display: inline-flex;
+    order: 2;
   }
 
   .nav-primary-wrap {
@@ -334,14 +350,21 @@ p:last-child {
     border-bottom: 1px solid var(--line);
   }
 
-  .header-tools {
-    gap: 8px;
-  }
-
   .header-search {
     width: min(140px, 22vw);
     font-size: 0.85rem;
     padding: 0 10px;
+  }
+}
+
+@media (min-width: 1021px) {
+  .brand {
+    margin-right: 0;
+  }
+
+  .header-tools,
+  .nav-toggle {
+    order: 0;
   }
 }
 

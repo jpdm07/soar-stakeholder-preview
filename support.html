@@ -21,7 +21,6 @@
           <span class="brand__tag">Animal Rescue</span>
         </span>
       </a>
-      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
       <div class="nav-primary-wrap">
         <nav aria-label="Primary">
           <ul class="nav-primary">
@@ -33,7 +32,22 @@
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="nav-drawer-utilities" aria-label="Live site shortcuts">
+          <p class="nav-drawer-utilities__label">Live site</p>
+          <form class="nav-drawer-search" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
+            <input type="search" name="q" class="nav-drawer-search__input" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
+          </form>
+          <a class="nav-drawer-link" href="https://www.sierraoverlookanimalrescue.org/cart-page" target="_blank" rel="noopener noreferrer">
+            <span class="nav-drawer-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M6 6h15l-1.5 9h-12L6 6zm0 0L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span>
+            <span class="nav-drawer-link__text">Shopping cart</span>
+          </a>
+          <a class="nav-drawer-link" href="https://www.sierraoverlookanimalrescue.org/" target="_blank" rel="noopener noreferrer">
+            <span class="nav-drawer-link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+            <span class="nav-drawer-link__text">Live site &amp; members</span>
+          </a>
+        </div>
       </div>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
       <div class="header-tools">
         <form class="header-search-form" role="search" method="get" action="https://www.sierraoverlookanimalrescue.org/search" target="_blank" rel="noopener noreferrer">
           <input type="search" name="q" class="header-search" placeholder="Search…" aria-label="Search the live SOAR site" autocomplete="off" />
